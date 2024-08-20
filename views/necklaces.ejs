@@ -1,0 +1,23 @@
+<%- include('./commen/header.ejs') %>
+    <%- include('./commen/navigation.ejs') %>
+
+
+        <h1 class="allProduct">Products</h1>
+        <div class="products-items">
+            <% for(let i of newData){%>
+            <div class="itemPdt itmPdtScd">
+                <a href="/newProductDiscriptionPage<%= i._id %>" class="jhg"> <img class="itemPdt-img" src="/publice/newProductImg/<%= i.photo_file %>" alt="loading..."></a>
+                <div class="products-text">
+                    <a href="/newProductDiscriptionPage<%= i._id %>" class="pro-title"><%= i.title %></a>
+                    <a class="pricelink" href="/newProductDiscriptionPage<%= i._id %>"><span id="Price"> Rs.<%= i.price %></span></a>
+                </div>
+            </div>
+            <%}%>
+        </div>
+    </div>
+    
+    
+
+
+     <%- include('./commen/footer.ejs') %>
+

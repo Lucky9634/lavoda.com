@@ -1,0 +1,39 @@
+
+
+
+<%- include('./commen/header.ejs') %>
+    <%- include('./commen/navigation.ejs') %>
+
+
+
+<div class="productContainer">
+  
+    <div class="product-section">
+        <img class="product-img" src="/publice/newProductImg/<%= DiscriptionData.photo_file %>" width="20rem" height="30rem" alt="1">
+        <img class="product-img second-img" src="/publice/newProductImg/<%= DiscriptionData.photo_file %> width="20rem" height="30rem" alt="1">
+    </div>
+
+    <dir class="product-text">
+        <p class="pdt-Heading"><%= DiscriptionData.title %></p>
+
+        <p class="pdt-Discription">
+            <%= DiscriptionData.Discription %>
+        </p>
+        <p class="quantity">Quantity</p>
+        <p class="quantity-para"><span class="minus">-</span> 1 <span class="plus">+</span></p>
+        
+        <p class="pdt-Price">Rs.<%= DiscriptionData.price %></p>
+        
+        <div class="product-btn">
+            <a class="product-anker" href="">Add to card</a>
+            <a class="product-anker" href="">Add to wishlist</a>
+        </div>
+    </dir>
+
+</div>
+
+
+
+
+
+<%- include('./commen/footer.ejs') %>

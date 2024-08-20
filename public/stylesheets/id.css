@@ -1,0 +1,23 @@
+
+
+/* only ud scc */
+
+#manu-btn {
+    display: flex;
+    gap: 0.7rem;
+}
+
+/* #manual_btn {
+    display: none;
+} */
+
+#manu-btn p {
+    font-weight: bolder;
+    margin-top: 0.2rem;
+}
+#Search-text {
+    padding: 0.5rem 1rem;
+    width: 90%;
+    border: 1px solid wheat;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

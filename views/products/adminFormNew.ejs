@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Your New Products</title>
+        <link rel="stylesheet" href="/Css/adminform.css">
+        <style>
+                .contect {
+                        width: 80%;
+                        margin: 4rem auto;
+                        display: flex;
+                        justify-content: center;
+                }
+
+                .border {
+                        display: flex;
+                        gap: 4rem;
+                        justify-content: space-between;
+                }
+
+                .underContent {
+                        display: flex;
+                        gap: 4rem;
+                        margin: 1rem 0;
+                        border: 1px solid gray;
+                        padding: 0.4rem;
+                }
+                .dataImg{
+                        width: 7rem;
+                        height: 6rem;
+                }
+        </style>
+</head>
+
+<body>
+        <div class="Categary">
+                <h2>New</h2>
+        </div>
+        <form class="add-Form-list" action="/add/new/products" method="post" id="product-Form"
+                enctype="multipart/form-data">
+                <input type="text" name="title" id="title" placeholder="Product Title">
+                <input type="textaria" name="Discription" id="Discription" placeholder="Product Discription">
+                <input type="text" name="price" id="price" placeholder="Product Price">
+                <input type="file" name="photo-file" id="file" placeholder="Product Image">
+                <button type="submit">Add Now</button>
+        </form>
+
+        <p class="note">Here Only Listing The Product On The Same Categary. Here The Image only Upload not any file.
+                Image size must be 670px To 800px.</p>
+
+
+        <div class="contect">
+                <div class="userFormDetails">
+                        <table>
+                                <tr class="border">
+                                        <td>Img</td>
+                                        <td>Title</td>
+                                        <td>Discription</td>
+                                        <td>Price</td>
+                                        <td>Delete</td>
+
+                                </tr>
+                                <tr class="underContent">
+                                        <% for(let i of newData){%>
+                                                <td><img src="/publice/newProductImg/<%= i.photo_file %>" class="dataImg" alt=""></td>
+                                                <td>
+                                                        <%= i.title %>
+                                                </td>
+                                                <td>
+                                                        <%= i.Discription %>
+                                                </td>
+                                                <td>
+                                                        Rs.<%= i.price %>
+                                                </td>
+                                                <td><a href="/user/detele/data/<%= i._id %>">Delete</a></td>
+                                </tr>
+                                <%}%>
+                        </table>
+                </div>
+        </div>
+</body>
+
+</html>

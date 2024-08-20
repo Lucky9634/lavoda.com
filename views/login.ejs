@@ -1,0 +1,18 @@
+<%- include('./commen/header.ejs') %>
+    <%- include('./commen/navigation.ejs') %>
+        <div class="login-container">
+            <div class="login-heading">
+                <h1>Login</h1>
+            </div>
+            <form class="sign-in" action="/user/loginUser" method="post">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="password">
+                <a id="forget-account" href="">Forget Your Account?</a>
+                <div class="form-btn">
+                    <button type="submit">Sign In</button>
+                    <a href="/user/signup">Create Account</a>
+                </div>
+            </form>
+        </div>
+
+<%- include('./commen/footer.ejs') %>

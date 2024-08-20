@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(243, 235, 236);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Categary{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.Categary h2{
+
+    border-bottom: 0.1rem solid gray;
+}
+
+.add-Form-list{
+    display: flex;
+    border: 0.1rem solid gray;
+    padding: 4rem 3rem;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem auto;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    width: 50%;
+}
+
+.add-Form-list input, button{
+    align-items: center;
+    padding: 0.6rem 1rem;
+    border:  none;
+   border-radius: 4px;
+}
+.note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem;
+}
+
+@media only screen and (max-width:650px){
+    .add-Form-list{
+        padding: 3rem 2rem;
+        width: 75%;
+        border-radius: 0.5rem;
+        
+    }
+    
+}

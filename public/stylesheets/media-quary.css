@@ -1,0 +1,146 @@
+
+
+/* media quary */
+@media only screen and (max-width:650px) {
+    .top-line {
+        font-size: 0.6rem;
+    }
+
+    #manu-btn p {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+        font-size: 0.9rem;
+        position: relative;
+        right: 0rem;
+        top: 0.5rem;
+        transform: translateY(0rem);
+    }
+
+    .top-bar {
+        display: none;
+    }
+
+    #manual_btn {
+        display: block;
+    }
+
+    .nav-container {
+        height: 3rem;
+    }
+
+    .main-image {
+        height: 50vh;
+    }
+
+    .shop-btn {
+        left: 20rem;
+        top: 25rem;
+    }
+
+    .img-btn {
+        bottom: 12rem;
+    }
+
+    .flex {
+        gap: 1rem;
+    }
+
+    .flex img {
+        width: 18rem;
+        height: 14rem;
+    }
+
+    .form-item {
+        width: 50%;
+    }
+
+    #Search-text {
+        width: 85%;
+    }
+
+    .products {
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+    .products-items {
+        gap: 1.7rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .itemPdt {
+        height: 20rem;
+        width: 10rem;
+    }
+
+    .pro-title {
+        font-size: 0.6rem;
+    }
+
+    .itemPdt-img {
+        height: 16rem;
+        width: 10rem;
+        border: 1px solid rgb(246, 242, 242);
+    }
+
+    .pricelink {
+        font-size: 0.6rem;
+    }
+
+    .second-img-footer {
+       margin-top: 40rem;
+    }
+
+    .footer {
+        width: 90%;
+    }
+
+    .footer-items {
+        /* background-color: yellow; */
+        height: 12rem;
+        width: 100%;
+    }
+
+    .newResponce {
+        gap: 0.5rem;
+    }
+
+    .ftr-icons {
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+
+
+}
+
+@media only screen and (max-width:1024px) {
+    .top-bar {
+        gap: 0.3rem;
+        font-size: 13px;
+    }
+
+    .main-image {
+        height: 40vh;
+    }
+
+    .flex img {
+        width: 85vw;
+        height: 18rem;
+    }
+
+    .copy-right {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .ftr-pto {
+        height: 2rem;
+        width: 4rem;
+    }
+
+}
